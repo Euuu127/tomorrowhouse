@@ -1,5 +1,8 @@
 package com.tmh.t1.member;
 
-public class MemberService {
+import org.springframework.stereotype.Service;
 
+@Service
+public class MemberService {
+	private MemberMapper memberMapper;
 }
