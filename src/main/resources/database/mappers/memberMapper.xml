@@ -6,6 +6,10 @@
     <mapper namespace="com.tmh.t1.member.MemberMapper">
     	<insert id="memberJoin" parameterType="MemberVO">
     		INSERT INTO member(email, PASSWORD, userName, authority) 
-    		VALUES(#{email}, #{password}, #{userName}, #{authority})
+    		VALUES(#{email}, #{password}, #{userName}, 'U')
     	</insert>
+    	
+    	<select id="memberLogin" parameterType="MemberVO" resultType="MemberVO">
+    		select userName, authority from member where email=#{email} and password= #{password}
+    	</select>
     </mapper>

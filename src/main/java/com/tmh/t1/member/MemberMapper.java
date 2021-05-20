@@ -9,8 +9,6 @@ public interface MemberMapper {
 	public MemberVO memberLogin(MemberVO memberVO)throws Exception;
 	public Long memberUpdate(MemberVO memberVO)throws Exception;
 	public Long memberDelete(MemberVO memberVO)throws Exception;
-	public Long setBrand(MemberVO memberVO)throws Exception;
-	public Long authUpdate(MemberVO memberVO)throws Exception;
 	
 	
 }
