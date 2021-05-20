@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+    <mapper namespace="com.tmh.t1.member.MemberMapper">
+    	<insert id="memberJoin" parameterType="MemberVO">
+    		INSERT INTO member(email, PASSWORD, userName, authority) 
+    		VALUES(#{email}, #{password}, #{userName}, #{authority})
+    	</insert>
+    </mapper>
